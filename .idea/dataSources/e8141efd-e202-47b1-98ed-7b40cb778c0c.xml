@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="yqy@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="yqy">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <table id="6" parent="2" name="u_permission"/>
+    <table id="7" parent="2" name="u_role"/>
+    <table id="8" parent="2" name="u_role_permission"/>
+    <table id="9" parent="2" name="u_user"/>
+    <table id="10" parent="2" name="u_user_role"/>
+    <table id="11" parent="2" name="user"/>
+    <column id="12" parent="6" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="6" name="url">
+      <Position>2</Position>
+      <Comment>urlåœ°å&#x9d;€</Comment>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <column id="14" parent="6" name="name">
+      <Position>3</Position>
+      <Comment>urlæ&#x8f;&#x8f;è¿°</Comment>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <key id="15" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="16" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="17" parent="7" name="name">
+      <Position>2</Position>
+      <Comment>è§’è‰²å&#x90;&#x8d;ç§°</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="18" parent="7" name="type">
+      <Position>3</Position>
+      <Comment>è§’è‰²ç±»åž‹</Comment>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="19" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="8" name="rid">
+      <Position>1</Position>
+      <Comment>è§’è‰²ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="21" parent="8" name="pid">
+      <Position>2</Position>
+      <Comment>æ&#x9d;ƒé™&#x90;ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="22" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="9" name="nickname">
+      <Position>2</Position>
+      <Comment>ç”¨æˆ·æ˜µç§°</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="24" parent="9" name="email">
+      <Position>3</Position>
+      <Comment>é‚®ç®±|ç™»å½•å¸&#x90;å&#x8f;·</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="25" parent="9" name="pswd">
+      <Position>4</Position>
+      <Comment>å¯†ç &#x81;</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="26" parent="9" name="create_time">
+      <Position>5</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="27" parent="9" name="last_login_time">
+      <Position>6</Position>
+      <Comment>æœ€å&#x90;Žç™»å½•æ—¶é—´</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="28" parent="9" name="status">
+      <Position>7</Position>
+      <Comment>1:æœ‰æ•ˆï¼Œ0:ç¦&#x81;æ­¢ç™»å½•</Comment>
+      <DataType>bigint(1)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="29" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="10" name="uid">
+      <Position>1</Position>
+      <Comment>ç”¨æˆ·ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="31" parent="10" name="rid">
+      <Position>2</Position>
+      <Comment>è§’è‰²ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="32" parent="11" name="id">
+      <Position>1</Position>
+      <Comment>编号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="11" name="name">
+      <Position>2</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="11" name="birthday">
+      <Position>3</Position>
+      <Comment>生日</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="35" parent="11" name="address">
+      <Position>4</Position>
+      <Comment>地址</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="36" parent="11" name="phone">
+      <Position>5</Position>
+      <Comment>电话</Comment>
+      <DataType>varchar(11)|0</DataType>
+    </column>
+    <key id="37" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
